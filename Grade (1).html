@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grade calculator</title>
+  <style> 
+  body{
+    margin:0;
+  }
+    div{
+      background-color:#97FFF9;
+      color:#FFFFFF;
+    }
+    img{
+      width:50%;
+      height:200px;
+      margin-top:5px;
+    }
+    .failed{
+      position:absolute;
+      right:5px;
+    }
+    h1{
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+  <img src="/best.png" alt="pass">
+  <img class="failed" src="/fail.png"
+    alt="fail">
+  <h1>What you see is what you get</h1>
+  </div>
+  <script>let grade = (prompt("Input your grade"))
+/*********If else statements*********/
+/*if(grade=100){
+  alert("you got an 'A' grade");
+} */
+ if(grade<=80 && grade>70){
+  alert("You got a 'B' grade")
+}
+else if (grade<=70 && grade>=50){
+  alert("You got a 'C' grade");
+}
+else if (grade<=50 && grade>=59){
+  alert("You got a 'D' grade");
+}
+else if (grade<=40){
+  alert("You got an 'F' grade");
+}
+else if (grade=100 && grade>=89){
+  alert("You got an 'A' grade");
+}
+/*else{
+  alert("Invalid grade entry,enter grade between 1-100")
+}*/</script>
+</body>
+
+</html>
